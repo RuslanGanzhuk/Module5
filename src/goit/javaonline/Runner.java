@@ -1,37 +1,21 @@
 package goit.javaonline;
 
+import java.io.PrintStream;
 import java.util.Arrays;
 
-/**
- * Created by Родион on 11.06.2016.
- */
+import static goit.javaonline.SortArray.*;
+
+
 public class Runner {
 
     public static void main(String[] arg) {
 
-        int arr[] = new int[10];
+        int[] array = SortArray.createArray();
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) (Math.random() * 100);
-            System.out.println(arr[i]);
-        }
-
-        System.out.println("Отсортированый массив :");
-        Arrays.sort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i] + " ");
-        }
-
-        System.out.println("Минимальный элемент массива : " + arr[0]);
-        System.out.println("Максимальный элемент массива :" + arr[9]);
-
-
-
-
-
-
-
+        System.out.println("Min element is " + SortArray.searchMinElement(array));
+        System.out.println("Max element is " + SortArray.searchMaxElement(array));
+        System.out.println("Sorted array is:" + SortArray.sortArrayBubble(array));
 
     }
-
 }
+
