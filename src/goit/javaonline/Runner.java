@@ -1,10 +1,7 @@
 package goit.javaonline;
 
-import java.io.PrintStream;
+import goit.javaonline.sortArray.SortArray;
 import java.util.Arrays;
-
-import static goit.javaonline.SortArray.*;
-
 
 public class Runner {
 
@@ -17,8 +14,6 @@ public class Runner {
         System.out.println("Max element is " + SortArray.searchMaxElement(array));
         Arrays.sort(array);
         System.out.println("Sorted array is:" + Arrays.toString(SortArray.sortArrayBubble(array)));
-
-
     }
 }
 

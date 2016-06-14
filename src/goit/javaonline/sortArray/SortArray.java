@@ -1,4 +1,4 @@
-package goit.javaonline;
+package goit.javaonline.sortArray;
 
 import java.util.Arrays;
 
@@ -58,6 +58,7 @@ public class SortArray {
                 }
             }
         }
+
         return arr;
     }
 }
