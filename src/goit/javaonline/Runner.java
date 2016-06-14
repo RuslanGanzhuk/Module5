@@ -12,9 +12,12 @@ public class Runner {
 
         int[] array = SortArray.createArray();
 
+        System.out.println("Not sorted array : " + Arrays.toString(array));
         System.out.println("Min element is " + SortArray.searchMinElement(array));
         System.out.println("Max element is " + SortArray.searchMaxElement(array));
-        System.out.println("Sorted array is:" + SortArray.sortArrayBubble(array));
+        Arrays.sort(array);
+        System.out.println("Sorted array is:" + Arrays.toString(SortArray.sortArrayBubble(array)));
+
 
     }
 }
