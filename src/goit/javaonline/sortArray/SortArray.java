@@ -1,4 +1,4 @@
-package goit.javaonline.sortArray;
+﻿package goit.javaonline.sortArray;
 
 import java.util.Arrays;
 
@@ -63,3 +63,11 @@ public class SortArray {
     }
 }
 
+/*
+java.util.Arrays - ненужный импорт
+
+Что с отступами в началах строк? Что с отступами вокруг арифметических знаков?
+
+Какое отношение имеет метод searchMaxElement() к классу SortArray? Плохое название классу
+
+*/
